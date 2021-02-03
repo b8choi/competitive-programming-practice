@@ -1,13 +1,11 @@
 n = int(input())
 
-cnt = []
-for i in range(10001):
-    cnt.append(0)
+arr = []
+for i in range(n):
+    m = int(input())
+    arr.append(m)
+
+arr.sort()
 
 for i in range(n):
-    k = int(input())
-    cnt[k] += 1
-
-for i in range(1, 10001):
-    for j in range(cnt[i]):
-        print(i)
+    print(arr[i])
